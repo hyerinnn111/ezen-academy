@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<ht lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css 작성 3가지 방법
+    1. 외부 css파일 만들어서 링크건다
+    이런식이다  <link rel="stylesheet" href="css/styles.css">
+    2. style 태그로 감싸서 css컨텐츠를 쓴다
+    <style> </style>
+    3. 스타일 적용을 원하는 개별태그로 가서 css를 작성한다 -->
+    <!--아래 링크로 작없한 css를 불러냅니다-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>>
+</head>
+    <!--css는 페이지 색상, 효과, 폰트 디자인 등, 컨텐츠 이용자가 보는
+    시각적 디자인 기능 구현에 사용됩니다
+    css의 특징은 cascading(상속) 입니다
+    부모요소의 css효과를 자식요소가 똑같이 받습니다
+    - 어디의 {무엇을 : 어떻게};
+    - p {color: red;} -->
+
+<!--개발자가 의도한 디자인 효과만을 남기고
+html 태그가 가진 의도치 않은 디자인 효과는 제거해야한다
+의도치 않은 디자인효과를 없애기 위한 css양식을
+"리셋 css" 양식이라 한다 
+리셋 css 사용 시 주의사항!!!
+css 나중에 온 친구가 우선권을 가집니다
+리셋 css는 내가 맨땅에 만들지x -> 인터넷에서 받기
+이걸 적용하면 글자의 크기가 균일해 지고 요소 사이 여백 스타일이 사라집니다-->
+
+<!--block의 특징
+배치방식 : 가로폭을 채우고 세로로 쌓인다
+폭과 높이 지정 : 너비와 높이 지정 가능 (width & height)
+여백지정 : (박스간 여백)margin & (컨텐츠와 박스의 여백)padding을 내 방향으로 지정
+
+in-line의 특징
+배치방식 : 가로로 나란히 배치
+폭과 높이 지정 : 지정안됨 컨텐츠 내용에 따라 변한다
+여백지정 : (박스간 여백)margin & (컨텐츠와 박스의 여백)padding을 좌우로만 지정가능-->   
+
+
+<h1>카피조우</h1>
+<p>
+  <img src="capyzou.png" alt="카피조우 증명사진">
+</p>
+<p>
+  당근 농장을 운영하고 있습니다.<br>
+  편하게 팔로우해 주세요!
+</p>
+<ul>
+  <li><a href="#">Capitter</a></li>
+  <li><a href="#">Capistagram</a></li>
+  <li><a href="#">Capybook</a></li>
+  </ul>
+
+</body>
+</html>

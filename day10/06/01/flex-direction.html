@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex basic</title>
+  <link rel="stylesheet" href="flex-basic.css">
+  <style>
+    .flex-container{
+      display:flex;
+      flex-direction: row; /* row-reverse, column, column-reverse */
+    }
+  </style>  
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">item-1</div>
+    <div class="flex-item">item-2</div>
+    <div class="flex-item">item-3</div>
+    <div class="flex-item">item-4</div>
+  </div>
+</body>
+</html>
+   
+<!-- flex-direction: row; 주 축방향이 왼쪽에서 오른쪽 (기본값)
+     flex-direction: row-reverse; 주 축방향이 오른쪽에서 왼쪽
+     flex-direction: column; 위에서 아래로
+     flex-direction: column-reverse; 아래에서 위로-->

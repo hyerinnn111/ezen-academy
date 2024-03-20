@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>justify-content</title>
+  <link rel="stylesheet" href="flex-basic.css">
+  <style>
+    .flex-container{
+      display:flex;
+      justify-content:flex-start; /* flex-end, center, space-between, space-around, space-evenly */
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">item-1</div>
+    <div class="flex-item">item-2</div>
+    <div class="flex-item">item-3</div>
+    <div class="flex-item">item-4</div>
+  </div>
+</body>
+</html>
+
+<!-- justify-content: flex-start; 시작점 기준으로 나열 (디폴트값)
+     justify-content: flex-end; 끝부터 나열하되 맨 끝엔 요소의 끝값이 온다 (flex-direction: row-reverse; 와 헷갈리지 않도록 주의하자)
+     justify-content: center; 가운데 정렬
+     justify-content: space-between; 요소의 처음과 끝을 구역 맨 가장자리에 두고 남은 요소들을 균등한 공간을 주면서 배치
+     justify-content: space-around; 가장자리에 여백의 절반을 분배
+     justify-content: space-evenly; 모든 구간에 동일한 면적의 여백이 주어진다 -->

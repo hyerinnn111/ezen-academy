@@ -1,0 +1,86 @@
+
+body {
+    background-color: rgb(231, 248, 251);
+    font-family:sans-serif;
+}
+
+/* 상대적인 비율을 나타낼 때 em & rem 이 있습니다 둘 다 비율을 나타내는 요소인데
+em은 부모요소를 기준으로 설정하고 & rem은 문서 전체를 기준으로 비율을 설정합니다
+
+div --> p div 태그 글자가 8px인 경우 margin: 2em은 8*2=16px가 됩니다
+반면 margin: 2rem; 은 문서 전체의 폰트 기본 크기인 16px를 기준으로 16*2=32px가 됩니다 */
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+form {
+    width: 640px; /*폼 너비 설정 */
+    margin: auto;   /* 가운데 정렬*/
+    background-color: rgb(246,260,255);
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+/* ul태그에 대한 reset css 적용*/
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    color: rgb(66,76,97);
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    display: block;      
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid rgb(152,159,184);
+    padding: 0.5rem;
+}
+
+button {
+    border: 1px solid rgb(51,67,100);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#form-actions {
+    text-align: right;
+}
+
+.btn-filled {
+    background-color: rgb(51,67,100);
+    color: white;
+}
+
+.btn-empty {
+    background-color: transparent;
+    color: rgb(51,67,100);
+}
+
+.inline-control {
+    display: flex;
+}
+
+.inline-control input {
+    width: auto;
+}
+
+.inline-control label {
+    margin:0;
+    margin-left: 0.5rem;
+}
+ 

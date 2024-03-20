@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index</title>
+  <style>
+    .box{
+      width:100px;
+      height:100px;
+    }
+    .red-box{
+      background-color:red;
+      position:relative;
+      /* z-index 속성 추가 */
+      /* z-index:10; */ 
+    }
+    .green-box{
+      background-color:green;
+      position:absolute;
+      left:0;
+      top:0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box red-box"></div>
+  <div class="box green-box"></div>
+</body>
+</html>
+
+<!-- html에 absolute의 부모 요소 역할을 하는 relative가 없다면
+문서 전체를 기준으로 좌표 위치를 정하므로
+모든 absolute 속성의 요소들은 화면 맨 왼쪽 위를 기준으로
+좌표가 정해진다
+단, 사람들마다 화면기기가 다르므로(디스플레이 사이즈)
+좌표를 지정하는 방식은 주의하여 사용할 것 -->

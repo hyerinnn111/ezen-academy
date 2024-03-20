@@ -1,0 +1,102 @@
+/*유니코드 다국어 설정*/
+@charset "utf-8";
+
+body {
+  background-image: url(../images/bg.png);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#333333;
+}
+
+header{
+  width: 900px;
+  margin: 0 auto 44px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0px 16px;
+}
+/* headr nav ul와 같이 쉼표없이 나열하면
+계층에 속하는 태그만 적용 되는데,
+쉼표가 header, nav, ul 이렇게 있으면
+해당태그의 요소 전부 다 선택하는 것을
+'자손선택자'라고 합니다*/
+header nav ul {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid rgb(34, 33, 33);
+  border-bottom: 2px solid rgb(34, 33, 33);
+  background-color: bisque;
+  padding: 10px 0px;
+}
+
+header nav ul li {
+  margin: 0 20px;
+  font-weight: 700;
+}
+/*마우스를 대면 조건을 만족하는 경우를
+ a:hovor로 나타냅니다*/
+
+header nav ul li a:hovor {
+text-decoration: underline double;
+}
+
+/*body태그에 직접 flex를 써버리면 body 아래 다른 자식 태그에도
+영향을 끼치게 됩니다
+그래서 태그 자체로는 의미가 없는 태그를 사용해서
+flex 등의 정렬 기능을 적용합니다
+그것이 이전에 언급한 <div></div> & <span></span> 태그 입니다
+문서구조에 영향을 주지 않으면서 html을 그룹화할 때 사용*/
+
+div{
+  width: 1200px;
+  margin: 0 auto 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* box-shadow: 0px 0px 10px rgba(0,0,0,0,5) 의 경우,
+x축의 위치 , y축의 위치, 흐림의 정도, 그림자 색상 및 투명도 */
+main {
+  flex-basis: 800px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0,5);
+}
+
+aside {
+  flex-basis: 300px;
+}
+
+aside nav {
+  background-color: white;
+  border-radius: 20px;  
+  box-shadow: 0px 0px 10px rgba(0,0,0,0,5);
+  padding: 30px 20px;
+  margin-bottom: 25px;
+}
+
+aside nav h2 {
+  margin-bottom: 15px;
+  font-size: 23px;
+  font-weight: bold;
+  color: darkslateblue;
+}
+
+aside nav ul {
+  font-size: 14px;
+}
+
+.categoryNav ul li {
+  list-style-type: square;
+  color: #333333;
+  margin: 10px;
+}
+
+.recentNav ul li {
+  border-bottom: 1px solid brown;
+  margin-bottom: 22px;
+  padding-bottom: 10px;
+}

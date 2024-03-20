@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>relative</title>
+  <style>
+    .box{
+      width:100px;
+      height:100px;
+    }
+    .red-box{
+      background-color:rgb(166, 252, 200);
+    }
+    .green-box{
+      background-color:rgb(243, 248, 143);
+      position:relative;
+      left:100px;
+      /* top 속성 추가 */
+      /* top:100px; */
+    }
+    .blue-box{
+      background-color:rgb(166, 252, 200);
+    }
+    .blueviolet-box{
+      background-color: rgb(243, 248, 143);
+      position:relative;
+      left:100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box red-box"></div>
+  <div class="box green-box"></div>
+  <div class="box blue-box"></div>
+  <div class="box blueviolet-box"></div>
+</body>
+</html>

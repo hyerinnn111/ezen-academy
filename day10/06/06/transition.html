@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition</title>
+  <style>
+    .red-box{
+      width:100px;
+      height:100px;
+      background-color:red;
+    }
+    .red-box:hover{
+      background-color:blue;
+      height: 100px;
+      width: 500px;
+      transition-property: background-color, width;
+      transition-duration: 1.5s;
+      transition-timing-function: ease-in;
+    }
+  </style>
+</head>
+<body>
+  <div class="red-box"></div>
+</body>
+</html>
+
+<!-- 애니메이션 효과 부여
+1. 전환 효과의 대상이 되는 속성을 적는다
+2. 전환효과의 지속시간을 적는다
+3. 전환효과의 과정을 설정한다 예를들어 시간 간격에 일정한지 (linear)
+   처음에 느리고 나중에 빨라지는지 등 (ease-in) -->
