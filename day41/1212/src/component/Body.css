@@ -1,0 +1,7 @@
+/* 리액트 jsx 내부 css 표기법과 css파일 표기법이 살짝 다른걸 확인가능합니다 */
+/* style={{ backgroundColor: "violet", color: 'blue'}} */
+
+.body { 
+    background-color: violet; 
+    color: blue;
+}
